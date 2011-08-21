@@ -1,0 +1,25 @@
+	<script src="/assets/javascripts/WKShake.js" type="text/javascript" charset="utf-8"></script>
+
+
+<script type="text/javascript">
+window.onload = function() {
+
+	//create a new instance of WKShake.
+	var myShakeEvent = new WKShake();
+
+	//start listening for shake event. 
+	//you can also use stop() to stop listening.
+	myShakeEvent.start();
+	
+	//define a custom method to fire when shake occurs.
+	myShakeEvent.shakeEventDidOccur = function() {
+	
+		//put your own code here etc.
+		if (confirm("Undo?")) {
+
+		}
+	}
+};
+</script>
+
+whatup

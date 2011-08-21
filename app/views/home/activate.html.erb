@@ -1,0 +1,5 @@
+<% @connections["all"].each do |connection| %>
+<%= connection["first_name"] %>
+<%= connection["industry"] %>
+<%= image_tag connection["picture_url"] %><br />
+<% end %>
