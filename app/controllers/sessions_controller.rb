@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
          user.save
          
          session[:uid] = user.uid
-         redirect_to '/home/activate'
+         redirect_to '/home/shake'
        
         # render :text => params
        
