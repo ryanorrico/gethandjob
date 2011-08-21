@@ -1,4 +1,4 @@
-<% @connections["all"].each do |connection| %>
+<% @connections["all"].first(10).each do |connection| %>
 
 	<% if connection["picture_url"] %>
 <%= image_tag connection["picture_url"] %>

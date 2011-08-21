@@ -19,8 +19,13 @@ window.onload = function() {
 };
 </script>
 
+<span class="bold">Awesome <%= @client["first_name"] %>!</span><br />
+iPhone users, shake that shit!<br/>
+All others, <%= link_to "tap here", '/home/activate', "rel" => "external" %>
+
 <div class="dude_pic">
-	<%= image_tag 'shake_dude.png' %>
-	
+	<%= image_tag 'shake_dude.png' %>	
 </div>  <!-- dude -->
+
+
 

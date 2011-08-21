@@ -6,7 +6,19 @@ class HomeController < ApplicationController
   def shake
 
 
+     user = User.where(uid: session[:uid]).first
 
+      # get your api keys at https://www.linkedin.com/secure/developer
+      client = LinkedIn::Client.new('heue86hmveky', 'h1aewkKShIUwxfnL')
+      rtoken = client.request_token.token
+      rsecret = client.request_token.secret
+
+
+
+      # or authorize from previously fetched access keys
+      client.authorize_from_access(user.token, user.secret)
+
+      @client = client.profile
 
   end
 
