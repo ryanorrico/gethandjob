@@ -24,4 +24,6 @@ Gethandjob::Application.configure do
 
   # Do not compress assets
   config.assets.compress = false
+  
+  ENV["FACTUAL"] = "Srvl1feSAovS6nRJLyf7eSxN2edODZjK86OGoyBoObmJpVsg1nP4IwKGJSH80XQJ"
 end

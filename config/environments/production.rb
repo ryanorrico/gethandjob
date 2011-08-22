@@ -48,4 +48,6 @@ Gethandjob::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+  
+  ENV["FACTUAL"] = "Srvl1feSAovS6nRJLyf7eSxN2edODZjK86OGoyBoObmJpVsg1nP4IwKGJSH80XQJ"
 end
